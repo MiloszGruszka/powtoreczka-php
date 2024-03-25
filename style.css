@@ -1,0 +1,33 @@
+body, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.table_head{
+    font-weight: bold;
+ }
+ td{
+    padding: 10px;
+ }
+ .formularz{
+    width: 600px;
+    margin: auto;
+ }
+ input[name='IMIE'],input[name='NAZWISKO'],input[name='EMAIL']{
+    width: 400px;
+    height: 25px;
+    margin: 25px;
+ }
+ input[name='submit']{
+    float: right;
+    background-color: green;
+    width: 100px;
+    height: 50px;
+ }
+ .box{
+    width: 600px;
+ }
+ legend{
+    text-align: center;
+    font-size: 3rem;
+ }
