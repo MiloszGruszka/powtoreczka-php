@@ -1,12 +1,12 @@
 <?php 
 include_once("polaczenie.php");
 if(isset($_POST['IMIE']) && isset($_POST['NAZWISKO']) && isset($_POST['EMAIL'])){
-   $imie = $_POST['IMIE'];
-   $nazwisko = $_POST['NAZWISKO'];
-   $email = $_POST['EMAIL'];
+   $IMIE = $_POST['IMIE'];
+   $NAZWISKO = $_POST['NAZWISKO'];
+   $EMAIL = $_POST['EMAIL'];
    
    echo "$IMIE,$NAZWISKO,$EMAIL";
-   $dodaj_do_bazy_danych = "INSERT INTO uczniowie(IMIE,NAZWISKO,EMAIL) values('$imie','$nazwisko','$email');";
+   $dodaj_do_bazy_danych = "INSERT INTO uczniowie(IMIE,NAZWISKO,EMAIL) values('$IMIE','$NAZWISKO','$EMAIL');";
    if($polaczenie->exec($dodaj_do_bazy_danych)){
       echo ("Dodano do bazy danych");
       header("Refresh:3; url=index.php");

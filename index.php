@@ -2,15 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDO</title>
+    <style type="text/css">
+
+        .table_head{
+    font-weight: bold;
+ }
+
+ td{
+    padding: 10px;
+ }
+
+ .formularz{
+    width: 600px;
+    margin: auto;
+ }
+
+ input[name='IMIE'],input[name='NAZWISKO'],input[name='EMAIL']{
+    width: 400px;
+    height: 25px;
+    margin: 25px;
+ }
+
+ input[name='submit']{
+    float: right;
+    background-color: green;
+    width: 100px;
+    height: 50px;
+ }
+
+ .box{
+    width: 600px;
+ }
+
+ legend{
+    text-align: center;
+    font-size: 3rem;
+ }
+
+ h3{
+   text-align: center;
+ }
+
+    </style>
 </head>
 <body>
 <div class="formularz">
       <fieldest>
          <legend>Dodaj do bazy danych</legend>
-         <form action="dodaj_do_bazy_danych.php" method="post">
+         <form action="dodaj_do_bd.php" method="post">
             <input type="text" name="IMIE" placeholder="Podaj imie" required />
             <input type="text" name="NAZWISKO" placeholder="Podaj nazwisko" required />
             <input type="text" name="EMAIL" placeholder="Podaj email" required />
